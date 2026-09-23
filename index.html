@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ahmar Hayat — AWS Cloud Engineer</title>
+<meta name="description" content="Ahmar Hayat, AWS Cloud Engineer working across infrastructure, deployment, and monitoring, with an applied background in PHP/Laravel.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="logo" aria-label="Ahmar Hayat, home">AH</a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#projects">Projects</a>
+      <a href="#stack">Tech Stack</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="#contact">Get in touch</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section id="top" class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Ahmar Hayat</p>
+        <h1>AWS Cloud Engineer, focused on infrastructure, deployment, and monitoring.</h1>
+        <p class="hero-sub">
+          I provision AWS infrastructure with Terraform, containerize applications with Docker,
+          and ship them through CI/CD pipelines — then keep them observable with CloudWatch.
+          Alongside that, I build and deploy the applications that run on that infrastructure,
+          including PHP/Laravel systems.
+        </p>
+        <div class="hero-meta">
+          <span class="meta-item">Dammam, Saudi Arabia</span>
+          <span class="meta-dot" aria-hidden="true"></span>
+          <span class="meta-item">Transferable Iqama</span>
+          <span class="meta-dot" aria-hidden="true"></span>
+          <span class="meta-item">Onsite &amp; Remote</span>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View projects</a>
+          <a class="btn btn-ghost" href="https://github.com/Ahmar25" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+
+      <div class="hero-diagram" role="img" aria-label="Pipeline diagram: application, containerize, deploy to AWS, monitor">
+        <svg viewBox="0 0 340 420" xmlns="http://www.w3.org/2000/svg" class="pipeline-svg">
+          <line x1="60" y1="55" x2="60" y2="365" class="pipeline-rail"/>
+
+          <g class="pipe-node">
+            <circle cx="60" cy="55" r="6"/>
+            <text x="84" y="45" class="node-label">Application</text>
+            <text x="84" y="65" class="node-sub">Laravel · PHP · MySQL</text>
+          </g>
+
+          <g class="pipe-node">
+            <circle cx="60" cy="145" r="6"/>
+            <text x="84" y="135" class="node-label">Containerize</text>
+            <text x="84" y="155" class="node-sub">Docker · Docker Compose</text>
+          </g>
+
+          <g class="pipe-node">
+            <circle cx="60" cy="235" r="6"/>
+            <text x="84" y="225" class="node-label">Deploy</text>
+            <text x="84" y="245" class="node-sub">GitHub Actions · CI/CD</text>
+          </g>
+
+          <g class="pipe-node accent-node">
+            <circle cx="60" cy="325" r="7"/>
+            <text x="84" y="315" class="node-label">Cloud Infrastructure</text>
+            <text x="84" y="335" class="node-sub">AWS EC2 · VPC · RDS · Terraform</text>
+          </g>
+
+          <g class="pipe-node monitor-node">
+            <circle cx="60" cy="395" r="6"/>
+            <text x="84" y="385" class="node-label">Monitor</text>
+            <text x="84" y="405" class="node-sub">CloudWatch · SNS</text>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <div class="wrap">
+      <h2>Projects</h2>
+      <p class="section-lede">Selected work spanning cloud infrastructure, deployment tooling, and the applications that run on top of it.</p>
+
+      <div class="project-grid">
+
+        <!-- Cloud & Infrastructure -->
+        <div class="project-col">
+          <h3 class="col-title">Cloud &amp; Infrastructure</h3>
+
+          <article class="card">
+            <h4>AWS Infrastructure Automation</h4>
+            <p>Provisions AWS infrastructure with Terraform — EC2, VPC, RDS, S3, and IAM roles — across development and production environments.</p>
+            <ul class="tags">
+              <li>Terraform</li><li>EC2</li><li>VPC</li><li>RDS</li><li>S3</li><li>IAM</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h4>Cloud Monitoring</h4>
+            <p>CloudWatch logs, dashboards, and SNS alarms for infrastructure monitoring and operational alerting on Nginx-fronted services.</p>
+            <ul class="tags">
+              <li>CloudWatch</li><li>SNS</li><li>Nginx</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- DevOps & Deployment -->
+        <div class="project-col">
+          <h3 class="col-title">DevOps &amp; Deployment</h3>
+
+          <article class="card">
+            <h4>CI/CD Pipeline</h4>
+            <p>GitHub Actions pipelines for automated testing and deployment of Dockerized applications to AWS EC2.</p>
+            <ul class="tags">
+              <li>GitHub Actions</li><li>Docker</li><li>AWS EC2</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h4>Kubernetes Application Deployment</h4>
+            <p>A Flask app containerized with Docker and deployed to a Kubernetes cluster (Minikube) — liveness/readiness probes, self-healing pod recovery, and manual scaling from 2 to 4 replicas.</p>
+            <ul class="tags">
+              <li>Kubernetes</li><li>Docker</li><li>Python / Flask</li><li>Minikube</li>
+            </ul>
+            <a class="card-link" href="https://github.com/Ahmar25/flask-k8s-deployment" target="_blank" rel="noopener">View on GitHub ↗</a>
+          </article>
+
+          <article class="card card-bridge">
+            <span class="bridge-tag">Bridge project — DevOps + PHP</span>
+            <h4>Server Health Monitor</h4>
+            <p>A real-time server monitoring dashboard: a Bash script collects CPU, memory, disk, and network metrics every 10 seconds into structured JSON, rendered by a PHP dashboard. Fully containerized with Docker and Docker Compose, deployable to any Linux server including AWS EC2.</p>
+            <ul class="tags">
+              <li>Bash</li><li>Linux</li><li>Docker</li><li>PHP</li><li>AWS EC2</li>
+            </ul>
+            <a class="card-link" href="https://github.com/Ahmar25/server-health-monitoring" target="_blank" rel="noopener">View on GitHub ↗</a>
+          </article>
+        </div>
+
+        <!-- Application Development -->
+        <div class="project-col">
+          <h3 class="col-title">Application Development</h3>
+
+          <article class="card">
+            <h4>Dockerized Laravel Application</h4>
+            <p>A Laravel application containerized with Docker Compose, served behind Nginx as a reverse proxy with SSL/TLS via Let's Encrypt, and integrated with AWS RDS and S3 for data and storage using environment-based configuration.</p>
+            <ul class="tags">
+              <li>Laravel</li><li>Docker</li><li>Nginx</li><li>MySQL</li><li>Redis</li>
+            </ul>
+          </article>
+
+          <p class="col-note">PHP/Laravel work sits alongside this cloud and deployment background rather than as a separate track — see the Server Health Monitor project for where the two meet directly.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section id="stack" class="stack">
+    <div class="wrap">
+      <h2>Tech stack</h2>
+
+      <div class="stack-grid">
+        <div class="stack-group">
+          <h3>Cloud</h3>
+          <ul class="chip-list">
+            <li>AWS EC2</li><li>VPC</li><li>IAM</li><li>S3</li><li>RDS</li>
+            <li>CloudWatch</li><li>Lambda</li><li>ELB</li><li>Auto Scaling</li>
+            <li>CloudFront</li><li>API Gateway</li><li>Route 53</li>
+          </ul>
+          <p class="stack-note">Also exposed to: GCP, Microsoft Azure</p>
+        </div>
+
+        <div class="stack-group">
+          <h3>Infrastructure as Code</h3>
+          <ul class="chip-list">
+            <li>Terraform</li><li>CloudFormation</li>
+          </ul>
+        </div>
+
+        <div class="stack-group">
+          <h3>DevOps</h3>
+          <ul class="chip-list">
+            <li>Docker</li><li>Docker Compose</li><li>Kubernetes</li>
+            <li>GitHub Actions</li><li>Jenkins</li>
+          </ul>
+        </div>
+
+        <div class="stack-group">
+          <h3>Backend</h3>
+          <ul class="chip-list">
+            <li>PHP</li><li>Laravel</li><li>MySQL</li>
+          </ul>
+        </div>
+
+        <div class="stack-group">
+          <h3>Automation</h3>
+          <ul class="chip-list">
+            <li>Bash</li><li>Python</li><li>YAML</li><li>JSON</li>
+          </ul>
+        </div>
+
+        <div class="stack-group">
+          <h3>Operating Systems</h3>
+          <ul class="chip-list">
+            <li>Ubuntu</li><li>Red Hat Linux</li>
+          </ul>
+        </div>
+
+        <div class="stack-group">
+          <h3>Networking &amp; Security</h3>
+          <ul class="chip-list">
+            <li>Subnetting</li><li>Security Groups</li><li>NACLs</li>
+            <li>VPN</li><li>DNS</li><li>IAM least privilege</li>
+          </ul>
+        </div>
+
+        <div class="stack-group">
+          <h3>Other</h3>
+          <ul class="chip-list">
+            <li>Git</li><li>GitHub</li><li>SSH</li><li>Apache</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="cert-note">AWS Certified Solutions Architect – Associate — <span class="cert-status">In Progress</span></p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="wrap contact-inner">
+      <div>
+        <h2>Contact</h2>
+        <p class="section-lede">Open to Cloud/DevOps roles, and selectively to PHP/Laravel work.</p>
+      </div>
+
+      <ul class="contact-list">
+        <li>
+          <span class="contact-label">Email</span>
+          <a href="mailto:ahmarhayat.cloud@gmail.com">ahmarhayat.cloud@gmail.com</a>
+        </li>
+        <li>
+          <span class="contact-label">Phone</span>
+          <a href="tel:+966573865891">+966 573 865 891</a>
+        </li>
+        <li>
+          <span class="contact-label">LinkedIn</span>
+          <a href="https://linkedin.com/in/ahmarhayat" target="_blank" rel="noopener">linkedin.com/in/ahmarhayat ↗</a>
+        </li>
+        <li>
+          <span class="contact-label">GitHub</span>
+          <a href="https://github.com/Ahmar25" target="_blank" rel="noopener">github.com/Ahmar25 ↗</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© <span id="year"></span> Ahmar Hayat. Built with plain HTML, CSS, and JavaScript.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
